@@ -1,0 +1,24 @@
+{
+  "name": "npm-number-parser",
+  "version": "0.1.0",
+  "description": "Module that parse all types of number from a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vcostin/npm-number-parser.git"
+  },
+  "keywords": [
+    "number",
+    "string",
+    "parser"
+  ],
+  "author": "vcostin",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
