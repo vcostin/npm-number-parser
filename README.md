@@ -1,6 +1,7 @@
 # npm-number-parser
 Module that parse all types of number from a string, returns an array of numbers.
 Inspired from [this post](http://stackoverflow.com/questions/10003683/javascript-get-number-from-string)
+
 [![Build Status](https://travis-ci.org/vcostin/npm-number-parser.svg?branch=v0.1.1)](https://travis-ci.org/vcostin/npm-number-parser)
 
 ##Installation
