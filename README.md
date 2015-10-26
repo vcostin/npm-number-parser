@@ -1,3 +1,35 @@
 # npm-number-parser
 Module that parse all types of number from a string, returns an array of numbers.
-Inspired from this post http://stackoverflow.com/questions/10003683/javascript-get-number-from-string
+Inspired from this post (!http://stackoverflow.com/questions/10003683/javascript-get-number-from-string)
+
+##Usage
+```js
+var parseNumbers = require('npm-number-parser');
+
+var numbers = parseNumbers('12 32 3.5 test test2');
+console.log(numbers);
+//=> [12, 32, 3.5, 2]
+
+numbers = parseNumbers('a string without numbers');
+console.log(numbers);
+//=> []
+
+//trows error if input it's not a string, see tests
+numbers = parseNumbers(null);
+```
+
+
+### Usage with callback
+```js
+var parseNumbers = require('npm-number-parser');
+
+parseNumbers('12 32 3.5 test test2', function(output){
+    console.log(output);
+    //=> [12, 32, 3.5, 2]
+});
+
+parseNumbers('a string without numbers', function(output){
+    console.log(output);
+    //=> []
+});
+```
