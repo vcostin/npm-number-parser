@@ -4,10 +4,10 @@ Inspired from [this post](http://stackoverflow.com/questions/10003683/javascript
 
 [![Build Status](https://travis-ci.org/vcostin/npm-number-parser.svg?branch=v0.1.1)](https://travis-ci.org/vcostin/npm-number-parser)
 
-##Installation
+## Installation
 ```$ npm install --save npm-number-parser```
 
-##Usage
+## Usage
 ```js
 var parseNumbers = require('npm-number-parser');
 
