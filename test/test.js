@@ -34,10 +34,10 @@ describe('Testing npm-number-parser module', function () {
         it('returns an empty array if input string does not have numbers, error is null', function () {
             var input = 'arrr... I have no numbers !@#$%^&*';
             parseNumbers(input, function (error, output) {
+                should.equal(error, null);
                 output.should.be.an('array');
                 output.should.have.length(0);
                 output.should.be.eql([]);
-                should.equal(error, null);
             });
         });
     });

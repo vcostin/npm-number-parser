@@ -38,6 +38,15 @@ parseNumbers('12 32 3.5 test test2', function(error, output){
 
 parseNumbers('a string without numbers', function(error, output){
     console.log(error);
+    //=> null
+
+    console.log(output);
+    //=> []
+});
+
+//other type of data that is not a string  
+parseNumbers(null, function(error, output){
+    console.log(error);
     //=> TypeError: Input data is not a string
 
     //with callback the output is null
