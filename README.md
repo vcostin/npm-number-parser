@@ -40,7 +40,8 @@ parseNumbers('a string without numbers', function(error, output){
     console.log(error);
     //=> TypeError: Input data is not a string
 
+    //with callback the output is null
     console.log(output);
-    //=> []
+    //=> null
 });
 ```
