@@ -1,6 +1,6 @@
 {
   "name": "npm-number-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Module that parse all types of number from a string",
   "main": "index.js",
   "scripts": {
