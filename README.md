@@ -21,18 +21,25 @@ console.log(numbers);
 
 //trows error if input it's not a string, see tests
 numbers = parseNumbers(null);
+//=> TypeError: Input data is not a string
 ```
 
 ### Usage with callback
 ```js
 var parseNumbers = require('npm-number-parser');
 
-parseNumbers('12 32 3.5 test test2', function(output){
+parseNumbers('12 32 3.5 test test2', function(error, output){
+    console.log(error);
+    //=> null
+    
     console.log(output);
     //=> [12, 32, 3.5, 2]
 });
 
-parseNumbers('a string without numbers', function(output){
+parseNumbers('a string without numbers', function(error, output){
+    console.log(error);
+    //=> TypeError: Input data is not a string
+
     console.log(output);
     //=> []
 });
